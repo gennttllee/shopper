@@ -295,7 +295,7 @@ function App() {
                         <button className='clear' onClick={load}>History</button>
                     </div>
                     <div className="realf">
-                        <a className='link' target='blank' href='https://www.mwprofile.com/' alt='my portfolio' >Visit my portfolio with a a click</a>
+                        <a className='link' target='blank' href='https://www.mwprofile.com/' alt='my portfolio' >Visit my portfolio with a click</a>
                         <p className='para2'>
                             <span className='material-icons'> copyright </span>
                             <span>{year} All rights reserved by Mark Williams</span>
