@@ -194,7 +194,6 @@ function App() {
                 myData.push(element)
             });
             localStorage.setItem('my data', JSON.stringify(myData))
-            alert('Added');
         }
     };
 
@@ -219,8 +218,12 @@ function App() {
     function format() {
         if (window.confirm('Are you really sure you want to wipe your history ?')) {
             localStorage.clear();
-        } else {
             alert('Screen and history cleared successfully')
+        } else {
+            setItems([]);
+            setTotal();
+            setAmount();
+            alert('Screen cleared successfully')
         }
     }
 
@@ -253,7 +256,7 @@ function App() {
                                         <div className='opposite'></div>
                                     ) : (
                                         <div className='div1'>
-                                            <button className='btn2' onClick={() => edit(index)}>
+                                            <button className='btn5' onClick={() => edit(index)}>
                                                 <span className='price'> <span className='naira'>N</span>{item.price}</span>
                                             </button>
                                             <div className='divb'>

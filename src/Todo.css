@@ -41,7 +41,7 @@
 }
 
 .input1 {
-    width: 60%;
+    width: 55%;
     height: 2.2rem;
     padding-left: 1rem;
     border: none;
@@ -66,11 +66,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 55%;
+    width: 60%;
 }
 
 .price {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0 10px;
     border-style: solid;
     border-width: 0 5px;
@@ -79,14 +79,15 @@
 }
 
 .span1 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     margin: 0 7px 0 0;
 }
 
 .clone{
     padding: 0;
     margin: 0 ;
-    font-size: 1.2rem;
+    font-size: 1rem;
+
 }
 
 .blessing {
@@ -112,8 +113,9 @@
 }
 
 .item {
-    font-size: 1.3rem;
+    font-size: 1rem;
     list-style: none;
+    padding-top: 5px;
 }
 
 .radio{
@@ -127,7 +129,16 @@
     border: none;
     outline: none;
     background-color: transparent;
-    margin: 0;
+    margin: 8px 0 0 0;
+    padding: 0;
+    color: red;
+}
+
+.btn5 {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 4px 0 0 0;
     padding: 0;
     color: red;
 }
@@ -174,13 +185,14 @@
 }
 
 .bill {
-    font-size: 1.5rem;
-    padding-right: 5px;
+    font-size: 1.2rem;
+    padding: 3px 5px 0 0;
 }
 
 .h2 {
     font-size: 1.5rem;
     text-align: left;
+    padding: 0 0 0 1rem;
 }
 
 .alison {
@@ -256,7 +268,6 @@
 .vera {
     text-align: center;
     height: 40%;
-    padding-left: 1rem;
 }
 .empty3{
     height: 12rem;
