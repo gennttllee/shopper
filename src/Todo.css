@@ -151,20 +151,20 @@
     width: fit-content;
     height: fit-content;
     padding: 8px 18px;
-    font-size: 1.1rem;
-    margin: 0 0 0 1rem;
+    font-size: 1rem;
+    margin: 0 0 0 .5rem;
 }
 
 .input2 {
-    width: 60%;
-    height: 2.2rem;
+    width: 50%;
+    height: 2rem;
     padding-left: 1rem;
     border-style: solid;
     border-width: 0 2px 2px 0;
     background-color: transparent;
     border-color: #FFEBC1;
     margin: 1rem 1.5rem 0 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .input2:focus {
@@ -186,7 +186,7 @@
 
 .bill {
     font-size: 1.2rem;
-    padding: 3px 5px 0 0;
+    padding: 4px 5px 0 0;
 }
 
 .h2 {
@@ -253,6 +253,7 @@
     text-align: center;
     position: fixed;
     bottom: 0;
+    left: 0;
     margin: 0;
     text-align: centre;
     width: 100%;
@@ -269,6 +270,7 @@
     text-align: center;
     height: 40%;
 }
+
 .empty3{
     height: 12rem;
     width: 100%;
