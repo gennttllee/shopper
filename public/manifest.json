@@ -4,18 +4,18 @@
   "description": "My shopper app created by Mark Williams",
   "icons": [
     {
-      "src": "/public/shopper.PNG",
+      "src": "./shopper.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/PNG"
+      "type": "image/jpg"
     },
     {
-      "src": "/public/shopper.PNG",
-      "type": "image/png",
+      "src": "./shopper.jpg",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "/public/shopper.PNG",
-      "type": "image/png",
+      "src": "./shopper.jpg",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],
