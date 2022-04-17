@@ -291,7 +291,7 @@ function App() {
                 <div className='empty3'></div>
                 <div className='footer'>
                     <div className='vera'>
-                        <h2 className='h2'> {total} Items<span className='alison'> <span className='naira'>N</span>{amount}</span></h2>
+                        <h2 className='h2'> {total} Items<span className='alison'> <span className='naira1'>N</span>{amount}</span></h2>
                         <button className='clear' onClick={clearAll}>Clear</button>
                         <button className='clear' onClick={load}>History</button>
                     </div>

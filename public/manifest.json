@@ -1,25 +1,26 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "my shopper App",
+  "name": "Mark williams shopper app",
+  "description": "My shopper app created by Mark Williams",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/public/shopper.PNG",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/PNG"
     },
     {
-      "src": "logo192.png",
+      "src": "/public/shopper.PNG",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "/public/shopper.PNG",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": " #e8c07d",
+  "background_color": " #e8c07d"
 }

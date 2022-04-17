@@ -20,6 +20,10 @@
     background-color: #e8c07d;
 }
 
+.divb{
+    background-color: white;
+}
+
 .empty{
     height: 8rem;
     width: 100%;
@@ -49,6 +53,7 @@
     border-radius: 20px;
     margin: 0 0 1rem 0;
     font-size: 1.1rem;
+    background-color: white;
 }
 
 .chisom {
@@ -67,6 +72,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
+    background-color: white;
 }
 
 .price {
@@ -76,24 +82,27 @@
     border-width: 0 5px;
     border-color: #9FC088;
     color: black;
+    background-color: white;
 }
 
 .span1 {
     font-size: 1.1rem;
     margin: 0 7px 0 0;
+    background-color: white;
 }
 
 .clone{
     padding: 0;
     margin: 0 ;
     font-size: 1rem;
-
+    background-color: white;
 }
 
 .blessing {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
+    background-color: white;
 }
 
 .btn1 {
@@ -110,12 +119,14 @@
 
 .cover {
     color: #614124;
+    background-color: white;
 }
 
 .item {
     font-size: 1rem;
     list-style: none;
     padding-top: 3px;
+    background-color: white;
 }
 
 .radio{
@@ -132,6 +143,7 @@
     margin: 8px 0 0 0;
     padding: 0;
     color: red;
+    background-color: white;
 }
 
 .btn5 {
@@ -141,6 +153,7 @@
     margin: 4px 0 0 0;
     padding: 0;
     color: red;
+    background-color: white;
 }
 
 .btn3 {
@@ -165,6 +178,7 @@
     border-color: #FFEBC1;
     margin: 1rem 1.5rem 0 1rem;
     font-size: 1rem;
+    background-color: white;
 }
 
 .input2:focus {
@@ -177,27 +191,32 @@
 
 .diver {
     margin: 0;
+    background-color: white;
 }
 
 .amount {
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .bill {
     font-size: 1.2rem;
     padding: 4px 5px 0 0;
+    background-color: white;
 }
 
 .h2 {
     font-size: 1.5rem;
     text-align: left;
     padding: 0 0 0 1rem;
+    
 }
 
 .alison {
     margin: 0 0 0 3rem;
     font-size: 2rem;
+    
 }
 
 .clear {
@@ -218,9 +237,16 @@
 .completed {
     text-decoration: line-through;
     color: #CC704B;
+    background-color: white;
 }
 
 .naira{
+    text-decoration: line-through;
+    text-decoration-style: double;
+    background-color: white;
+}
+
+.naira1{
     text-decoration: line-through;
     text-decoration-style: double;
 }
@@ -243,6 +269,7 @@
     position: relative;
     animation: animal;
     animation-duration: .5s;
+    background-color: white;
 }
 
 .opposite {
