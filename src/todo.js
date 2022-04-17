@@ -37,12 +37,16 @@ function App() {
         setItems(newItems);
         let amos = 0;
         let harry = 0;
-        newItems.forEach(element => {
-            amos += element.bill;
-            harry += element.price;
+        let monkey = 0
+        newItems.forEach(index => {
+            amos += index.bill;
+            harry += index.quantity;
+            if (index.isSelected === true){
+                monkey += index.quantity
+            }
         });
         setAmount(amos);
-        setTotal(harry);
+        setTotal(harry- monkey);
         save();
         setShow('');
     }
@@ -56,22 +60,12 @@ function App() {
             const mama = calcBill(para, 0);
             newItems[index].bill = mama;
             calculateAmount();
-            let totalQuantity = 0;
-            newItems.forEach(element => {
-                totalQuantity += element.quantity;
-            });
-            setTotal(totalQuantity - quant);
             setItems(newItems);
         } else {
             const mama = calcBill(para, quant);
             newItems[index].bill = mama;
             setItems(newItems);
             calculateAmount();
-            let totalQuantity = 0;
-            newItems.forEach(element => {
-                totalQuantity += element.quantity;
-            });
-            setTotal(totalQuantity);
             setItems(newItems);
         };
     };
@@ -80,6 +74,7 @@ function App() {
         const newItems = [...items];
         newItems[index].isSelected = !newItems[index].isSelected;
         quantityCounter(index);
+        calculateTotal()
         setItems(newItems);
     };
 
@@ -152,12 +147,15 @@ function App() {
     }
 
     const calculateTotal = () => {
-        let totalQuantity = 0;
         const newItems = [...items];
-        newItems.forEach(element => {
-            totalQuantity += element.quantity;
-        });
-        setTotal(totalQuantity)
+        let manners = 0
+        newItems.forEach(index =>{
+            if (index.isSelected === true) {
+            } else {
+                manners += index.quantity;
+            }
+        })
+        setTotal(manners);
     };
 
     const calculateAmount = () => {
@@ -205,12 +203,15 @@ function App() {
             const myData1 = JSON.parse(data1);
             setItems(myData1);
             let baby = 0;
-            let dammy = 0;
-            myData1.forEach(element => {
-                baby += element.bill;
-                dammy += element.quantity;
-            });
-            setTotal(dammy);
+            let manners = 0
+            myData1.forEach(index =>{
+                if (index.isSelected === true) {
+                } else {
+                    manners += index.quantity;
+                    baby += index.bill
+                }
+            })
+            setTotal(manners);
             setAmount(baby);
         }
     };
