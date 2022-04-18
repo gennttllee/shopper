@@ -41,12 +41,12 @@ function App() {
         newItems.forEach(index => {
             amos += index.bill;
             harry += index.quantity;
-            if (index.isSelected === true){
+            if (index.isSelected === true) {
                 monkey += index.quantity
             }
         });
         setAmount(amos);
-        setTotal(harry- monkey);
+        setTotal(harry - monkey);
         setShow('');
     }
 
@@ -141,14 +141,13 @@ function App() {
         updater(index)
         calculateTotal();
         calculateAmount();
-        save();
         newItems[index].isVisible = !newItems[index].isVisible;
     }
 
     const calculateTotal = () => {
         const newItems = [...items];
         let manners = 0
-        newItems.forEach(index =>{
+        newItems.forEach(index => {
             if (index.isSelected === true) {
             } else {
                 manners += index.quantity;
@@ -167,17 +166,9 @@ function App() {
     }
 
     function clearAll() {
-        if (window.confirm('Do you want to clear your history as well ? if yes: ok else: cancel')) {
-            setItems([]);
-            setTotal();
-            setAmount();
-            format();
-        } else {
-            setItems([]);
-            setTotal();
-            setAmount();
-            alert('Screen cleared successfully')
-        }
+        setItems([]);
+        setTotal();
+        setAmount();
     };
 
     function save() {
@@ -191,10 +182,9 @@ function App() {
                 myData.push(element)
             });
             localStorage.setItem('my data', JSON.stringify(myData))
+            alert('Saved')
         }
-        setItems([]);
-        setTotal();
-        setAmount();
+        clearAll()
     };
 
     function load() {
@@ -206,7 +196,7 @@ function App() {
             setItems(myData1);
             let baby = 0;
             let manners = 0
-            myData1.forEach(index =>{
+            myData1.forEach(index => {
                 if (index.isSelected === true) {
                 } else {
                     manners += index.quantity;
@@ -216,18 +206,14 @@ function App() {
             setTotal(manners);
             setAmount(baby);
         }
+        if (window.confirm('Do you want to format your history data ?')) {
+            format()
+        }
     };
 
     function format() {
-        if (window.confirm('Are you really sure you want to wipe your history ?')) {
-            localStorage.clear();
-            alert('Screen and history cleared successfully')
-        } else {
-            setItems([]);
-            setTotal();
-            setAmount();
-            alert('Screen cleared successfully')
-        }
+        localStorage.clear();
+        alert('history cleared successfully')
     }
 
     let d = new Date();
