@@ -178,13 +178,13 @@ function App() {
         } else {
             const data = localStorage.getItem('my data');
             const myData = JSON.parse(data);
-            items.forEach(element => {
-                myData.push(element)
-            });
-            localStorage.setItem('my data', JSON.stringify(myData))
-            alert('Saved')
+            items.forEach(index => {
+                myData.push(index)
+            })
+            const myBar = [...myData.reduce((map, obj) => map.set(obj.itemName, obj), new Map()).values()];
+            localStorage.setItem('my data', JSON.stringify(myBar))
+            alert('saved')
         }
-        clearAll()
     };
 
     function load() {
@@ -206,14 +206,13 @@ function App() {
             setTotal(manners);
             setAmount(baby);
         }
-        if (window.confirm('Do you want to format your history data ?')) {
-            format()
-        }
     };
 
     function format() {
-        localStorage.clear();
-        alert('history cleared successfully')
+        if (window.confirm('Are you really sure you want to format your history')){
+            localStorage.clear();
+            alert('history cleared successfully')
+        }
     }
 
     let d = new Date();
@@ -283,6 +282,9 @@ function App() {
                         <button className='clear' onClick={save}>Save</button>
                         <button className='clear' onClick={clearAll}>Clear</button>
                         <button className='clear' onClick={load}>History</button>
+                        <button className='btn9'>
+                            <span onClick={format} class="material-icons man"> arrow_forward_ios </span>
+                        </button>
                     </div>
                     <div className="realf">
                         <a className='link' target='blank' href='https://www.mwprofile.com/' alt='my portfolio' >Visit my portfolio with a click</a>
