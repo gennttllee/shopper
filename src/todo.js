@@ -47,7 +47,6 @@ function App() {
         });
         setAmount(amos);
         setTotal(harry- monkey);
-        save();
         setShow('');
     }
 
@@ -193,6 +192,9 @@ function App() {
             });
             localStorage.setItem('my data', JSON.stringify(myData))
         }
+        setItems([]);
+        setTotal();
+        setAmount();
     };
 
     function load() {
@@ -292,6 +294,7 @@ function App() {
                 <div className='footer'>
                     <div className='vera'>
                         <h2 className='h2'> {total} Items<span className='alison'> <span className='naira1'>N</span>{amount}</span></h2>
+                        <button className='clear' onClick={save}>Save</button>
                         <button className='clear' onClick={clearAll}>Clear</button>
                         <button className='clear' onClick={load}>History</button>
                     </div>

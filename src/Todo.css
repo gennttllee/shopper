@@ -223,9 +223,9 @@
     text-align: center;
     width: fit-content;
     height: fit-content;
-    padding: 10px 25px;
+    padding: 7px 25px;
     border-radius: 20px;
-    margin: 0 1rem;
+    margin: 0 7px;
     outline: none;
     border: none;
     background-color: #614124;
@@ -289,13 +289,12 @@
 }
 
 .realf{
-    margin: 2rem 0 0;
-    height: 40%;
+    margin: 1rem 0 1rem;
 }
 
 .vera {
     text-align: center;
-    height: 40%;
+    margin: 0;
 }
 
 .empty3{
