@@ -211,6 +211,7 @@ function App() {
     function format() {
         if (window.confirm('Are you really sure you want to format your history')){
             localStorage.clear();
+            clearAll();
             alert('history cleared successfully')
         }
     }
