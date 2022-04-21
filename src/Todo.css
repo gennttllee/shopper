@@ -5,7 +5,7 @@
     height: 100%;
 }
 
-.container1{
+.container1 {
     width: 100%;
     position: fixed;
     top: 0;
@@ -14,22 +14,25 @@
     background-color: #e8c07d;
 }
 
-.container3{
+.container3 {
     overflow: hidden;
     height: 60%;
     background-color: #e8c07d;
 }
 
-.divb{
+.divb {
     background-color: white;
+    width: 50%;
+    text-align: center;
+    margin: 0 10px;
 }
 
-.empty{
+.empty {
     height: 8rem;
     width: 100%;
 }
 
-.empty1{
+.empty1 {
     height: 1rem;
     width: 100%;
 }
@@ -59,7 +62,7 @@
 .chisom {
     position: relative;
     animation: mover;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     margin: 1rem 0;
     padding: 1rem 0;
     border-width: 0 0 2px 0;
@@ -71,8 +74,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
+    width: 59%;
     background-color: white;
+    margin: 0 0 0 .5rem;
 }
 
 .price {
@@ -80,9 +84,12 @@
     padding: 0 10px;
     border-style: solid;
     border-width: 0 5px;
-    border-color: #9FC088;
+    border-color: #9fc088;
     color: black;
     background-color: white;
+    word-break: break-all;
+    width: 90%;
+    line-break: strict;
 }
 
 .span1 {
@@ -91,9 +98,9 @@
     background-color: white;
 }
 
-.clone{
+.clone {
     padding: 0;
-    margin: 0 ;
+    margin: 0;
     font-size: 1rem;
     background-color: white;
 }
@@ -120,6 +127,8 @@
 .cover {
     color: #614124;
     background-color: white;
+    margin: 0 .5rem 0 0;
+    width: 39%;
 }
 
 .item {
@@ -127,12 +136,15 @@
     list-style: none;
     padding-top: 3px;
     background-color: white;
+    width: 100%;
+    word-break: break-all;
+    line-break: strict;
 }
 
-.radio{
+.radio {
     margin-right: 5px;
-    accent-color:#361500;
-    box-shadow: -2px 0 0 maroon; 
+    accent-color: #361500;
+    box-shadow: -2px 0 0 maroon;
     border-radius: 100%;
 }
 
@@ -159,13 +171,13 @@
 .btn3 {
     border: none;
     outline: none;
-    background-color: #CC704B;
+    background-color: #cc704b;
     color: white;
     width: fit-content;
     height: fit-content;
     padding: 8px 18px;
     font-size: 1rem;
-    margin: 0 0 0 .5rem;
+    margin: 0 0 0 0.5rem;
 }
 
 .input2 {
@@ -175,7 +187,7 @@
     border-style: solid;
     border-width: 0 2px 2px 0;
     background-color: transparent;
-    border-color: #FFEBC1;
+    border-color: #ffebc1;
     margin: 1rem 1.5rem 0 1rem;
     font-size: 1rem;
     background-color: white;
@@ -186,7 +198,7 @@
     border-style: solid;
     border-width: 0 2px 2px 0;
     background-color: transparent;
-    border-color: #9FC088;
+    border-color: #9fc088;
 }
 
 .diver {
@@ -201,18 +213,21 @@
 }
 
 .bill {
-    font-size: 1.2rem;
-    padding: 4px 5px 0 0;
+    font-size: 1.1rem;
+    margin: 4px 0 0;
+    padding: 0;
     background-color: white;
+    word-break: break-all;
+    text-align: right;
 }
 
-.man{
+.man {
     background-color: #e8c07d;
     margin: 0;
     padding: 0;
 }
 
-.btn9{
+.btn9 {
     outline: none;
     border: none;
     padding: 0;
@@ -244,20 +259,19 @@
     font-size: 1rem;
 }
 
-
 .completed {
     text-decoration: line-through;
-    color: #CC704B;
+    color: #cc704b;
     background-color: white;
 }
 
-.naira{
+.naira {
     text-decoration: line-through;
     text-decoration-style: double;
     background-color: white;
 }
 
-.naira1{
+.naira1 {
     text-decoration: line-through;
     text-decoration-style: double;
 }
@@ -279,7 +293,7 @@
     transition: all 1s linear;
     position: relative;
     animation: animal;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     background-color: white;
 }
 
@@ -299,7 +313,7 @@
     background-color: #e8c07d;
 }
 
-.realf{
+.realf {
     margin: 1rem 0 1rem;
 }
 
@@ -308,17 +322,17 @@
     margin: 0;
 }
 
-.empty3{
+.empty3 {
     height: 12rem;
     width: 100%;
 }
 
-.para2{
+.para2 {
     margin: 0;
     padding: 0;
 }
 
-.link{
+.link {
     margin: 0;
     padding: 0;
     text-decoration: none;
