@@ -1,5 +1,5 @@
 .app {
-    background-color: #e8c07d;
+    background-color: #FCF8E8;
     margin: 0;
     padding: 1rem;
     height: 100%;
@@ -11,20 +11,24 @@
     top: 0;
     z-index: 1;
     overflow: hidden;
-    background-color: #e8c07d;
+    color: black;
 }
 
 .container3 {
     overflow: hidden;
     height: 60%;
-    background-color: #e8c07d;
+    color: black;
+}
+
+.ife{
+    background-color: #ECB390;
 }
 
 .divb {
-    background-color: white;
     width: 50%;
     text-align: center;
     margin: 0 10px;
+    color: black;
 }
 
 .empty {
@@ -53,10 +57,13 @@
     padding-left: 1rem;
     border: none;
     outline: none;
-    border-radius: 20px;
     margin: 0 0 1rem 0;
     font-size: 1.1rem;
     background-color: white;
+}
+
+.input1:focus{
+    outline: 2px solid orange;
 }
 
 .chisom {
@@ -66,7 +73,6 @@
     margin: 1rem 0;
     padding: 1rem 0;
     border-width: 0 0 2px 0;
-    background-color: white;
     transition: all 1s linear;
 }
 
@@ -75,7 +81,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 59%;
-    background-color: white;
     margin: 0 0 0 .5rem;
 }
 
@@ -86,7 +91,7 @@
     border-width: 0 5px;
     border-color: #9fc088;
     color: black;
-    background-color: white;
+    background-color: transparent;
     word-break: break-all;
     width: 90%;
     line-break: strict;
@@ -95,38 +100,33 @@
 .span1 {
     font-size: 1.1rem;
     margin: 0 7px 0 0;
-    background-color: white;
 }
 
 .clone {
     padding: 0;
     margin: 0;
     font-size: 1rem;
-    background-color: white;
 }
 
 .blessing {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: white;
 }
 
 .btn1 {
     width: 6rem;
     height: 37px;
-    border-radius: 20px;
     margin: 0 0 0 1rem;
     outline: none;
     border: none;
-    background-color: #614124;
-    color: white;
+    background-color: #4B5D67;
+    color: antiquewhite;
     font-size: 1.1rem;
 }
 
 .cover {
     color: #614124;
-    background-color: white;
     margin: 0 .5rem 0 0;
     width: 39%;
 }
@@ -135,10 +135,10 @@
     font-size: 1rem;
     list-style: none;
     padding-top: 3px;
-    background-color: white;
     width: 100%;
     word-break: break-all;
     line-break: strict;
+    color: black;
 }
 
 .radio {
@@ -155,7 +155,6 @@
     margin: 8px 0 0 0;
     padding: 0;
     color: red;
-    background-color: white;
 }
 
 .btn5 {
@@ -165,14 +164,13 @@
     margin: 4px 0 0 0;
     padding: 0;
     color: red;
-    background-color: white;
 }
 
 .btn3 {
     border: none;
     outline: none;
-    background-color: #cc704b;
-    color: white;
+    background-color: #94B49F;
+    color: black;
     width: fit-content;
     height: fit-content;
     padding: 8px 18px;
@@ -190,7 +188,6 @@
     border-color: #ffebc1;
     margin: 1rem 1.5rem 0 1rem;
     font-size: 1rem;
-    background-color: white;
 }
 
 .input2:focus {
@@ -203,26 +200,23 @@
 
 .diver {
     margin: 0;
-    background-color: white;
 }
 
 .amount {
     display: flex;
     justify-content: space-between;
-    background-color: white;
 }
 
 .bill {
     font-size: 1.1rem;
     margin: 4px 0 0;
     padding: 0;
-    background-color: white;
     word-break: break-all;
     text-align: right;
+    color: black;
 }
 
 .man {
-    background-color: #e8c07d;
     margin: 0;
     padding: 0;
 }
@@ -232,6 +226,7 @@
     border: none;
     padding: 0;
     margin: 0;
+    background-color: transparent;
 }
 
 .h2 {
@@ -250,25 +245,22 @@
     width: fit-content;
     height: fit-content;
     padding: 7px 25px;
-    border-radius: 20px;
     margin: 0 7px;
     outline: none;
     border: none;
-    background-color: #614124;
-    color: white;
+    background-color:#4B5D67;
+    color: antiquewhite;
     font-size: 1rem;
 }
 
 .completed {
     text-decoration: line-through;
     color: #cc704b;
-    background-color: white;
 }
 
 .naira {
     text-decoration: line-through;
     text-decoration-style: double;
-    background-color: white;
 }
 
 .naira1 {
@@ -294,7 +286,6 @@
     position: relative;
     animation: animal;
     animation-duration: 0.5s;
-    background-color: white;
 }
 
 .opposite {
@@ -310,7 +301,6 @@
     text-align: centre;
     width: 100%;
     height: 25%;
-    background-color: #e8c07d;
 }
 
 .realf {
