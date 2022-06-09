@@ -215,7 +215,6 @@ function App() {
             alert('history cleared successfully')
         }
     }
-
     let d = new Date();
     const year = d.getFullYear();
 
@@ -288,7 +287,7 @@ function App() {
                         </button>
                     </div>
                     <div className="realf">
-                        <a className='link' target='blank' href='https://www.mwprofile.com/' alt='my portfolio' >Visit my portfolio with a click</a>
+                        <a className='link' target='blank' href='https://www.mwprofile.com/' alt='my portfolio' >About the developer</a>
                         <p className='para2'>
                             <span className='material-icons'> copyright </span>
                             <span>{year} All rights reserved by Mark Williams</span>
