@@ -2,13 +2,37 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+}
+
+.first{
+    position: fixed;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 18%;
+    background-color: white;
+    z-index: 1;
+}
+
+.empty{
+    height: 10rem;
+}
+
+.mark{
+    width: 100%;
+    height: 60%;
 }
 
 .container {
     width: 50%;
-    height: 90vh;
     margin: 0 auto;
-    position: relative;
+}
+.container1{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 8rem;
 }
 
 .btn5 {
@@ -49,10 +73,11 @@
 }
 
 .btn {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     height: 20%;
+    background-color: white;
 }
 
 .diver {

@@ -16,7 +16,7 @@ const App = () => {
       if (products.length < 1) {
         setProducts(real)
       }
-    } else{
+    } else {
       setProducts([])
     }
   }, []);
@@ -123,38 +123,49 @@ const App = () => {
 
   return (
     <div className='app'>
-      <div className='container'>
-        <h1 className='h1'>MY SHOPPER APP</h1>
-        <input className='input' value={item} onKeyDown={pressed} onChange={add} type='text' placeholder='Enter Item here' required></input>
-        <button onClick={addItem} className='btn5'>Enter</button>
-        <div className='flex'>
-          {products.length > 0 ? products.map((product, index) => <div className='diver' key={index}>
-            <div className='div'>
-              <p className='p' >{product.itemName}</p>
-              <p className='p'><span className='span'>N</span>{product.price}</p>
-              <p className='p'>{product.quantity}</p>
-              <p> <span className='span'>N</span>{product.bill}</p>
-            </div>
-            {product.isVisible ? <div className='inputFlex'>
-              <input onFocus={() => setChange(index)} value={change === index && price} type='number' onChange={(e) => setPrice(e.target.value)} placeholder='edit price' className='input1'></input>
-              <input onFocus={() => setChange(index)} value={change === index && quant} type='number' onChange={(e) => setQuant(e.target.value)} placeholder=' edit quantity' className='input1'></input>
-            </div> : null}
-            <div className='btnDiv'>
-              <button onClick={() => edit(index)} className='edit'>edit</button>
-              <button onClick={() => deleted(product, index)} className='delete'>{product.isVisible ? 'update' : 'delete'}</button>
-            </div>
-          </div>) : <h4>No items yet , start adding items above</h4>}
+      <div className='first'>
+        <div className='container'>
+          <h1 className='h1'>MY SHOPPER APP</h1>
+          <input className='input' value={item} onKeyDown={pressed} onChange={add} type='text' placeholder='Enter Item here' required></input>
+          <button onClick={addItem} className='btn5'>Enter</button>
         </div>
-        <div className='btn'>
-          <h3 className='h3'>Total items : {totalItems}</h3>
-          <h3 className='h4'>Total Bill : <span className='span'>N</span>{total}</h3>
-          <div className='footer'>
-            <button className='btn3' onClick={clear}>Clear</button>
-            <Link to='/history'>
-              <button className='btn4'>History</button>
-            </Link>
+      </div>
+      <div className='container1'>
+        <div className='mark'>
+          <div className='container'>
+            <div className='flex'>
+              {products.length > 0 ? products.map((product, index) => <div className='diver' key={index}>
+                <div className='div'>
+                  <p className='p' >{product.itemName}</p>
+                  <p className='p'><span className='span'>N</span>{product.price}</p>
+                  <p className='p'>{product.quantity}</p>
+                  <p> <span className='span'>N</span>{product.bill}</p>
+                </div>
+                {product.isVisible ? <div className='inputFlex'>
+                  <input onFocus={() => setChange(index)} value={change === index && price} type='number' onChange={(e) => setPrice(e.target.value)} placeholder='edit price' className='input1'></input>
+                  <input onFocus={() => setChange(index)} value={change === index && quant} type='number' onChange={(e) => setQuant(e.target.value)} placeholder=' edit quantity' className='input1'></input>
+                </div> : null}
+                <div className='btnDiv'>
+                  <button onClick={() => edit(index)} className='edit'>edit</button>
+                  <button onClick={() => deleted(product, index)} className='delete'>{product.isVisible ? 'update' : 'delete'}</button>
+                </div>
+              </div>) : <h4>No items yet , start adding items above</h4>}
+            </div>
           </div>
-          <p>About the developer <a target='blank' href='https://www.mwprofile.com/'> Mark Williams</a></p>
+        </div>
+        <div className='empty'></div>
+        <div className='btn'>
+          <div className='container'>
+            <h3 className='h3'>Total items : {totalItems}</h3>
+            <h3 className='h4'>Total Bill : <span className='span'>N</span>{total}</h3>
+            <div className='footer'>
+              <button className='btn3' onClick={clear}>Clear</button>
+              <Link to='/history'>
+                <button className='btn4'>History</button>
+              </Link>
+            </div>
+            <p>About the developer <a target='blank' href='https://www.mwprofile.com/'> Mark Williams</a></p>
+          </div>
         </div>
       </div>
     </div>
