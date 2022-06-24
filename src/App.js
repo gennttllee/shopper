@@ -126,7 +126,7 @@ const App = () => {
       <div className='container'>
         <h1 className='h1'>MY SHOPPER APP</h1>
         <input className='input' value={item} onKeyDown={pressed} onChange={add} type='text' placeholder='Enter Item here' required></input>
-        <button className='btn5'>Enter</button>
+        <button onClick={addItem} className='btn5'>Enter</button>
         <div className='flex'>
           {products.length > 0 ? products.map((product, index) => <div className='diver' key={index}>
             <div className='div'>

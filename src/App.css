@@ -1,25 +1,24 @@
 .app {
     width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
     text-align: center;
-    height: 100vh;
 }
 
 .container {
     width: 50%;
+    height: 90vh;
+    margin: 0 auto;
     position: relative;
-    height: 100%;
 }
 
-.btn5{
+.btn5 {
     width: 5rem;
-    height: 3rem;
+    height: 2.9rem;
     background-color: brown;
     color: white;
     border: none;
     outline: none;
+    font-size: 1.2rem;
 }
 
 .flex {
@@ -35,23 +34,25 @@
     margin-bottom: -0.1rem;
 }
 
-.h1{
+.h1 {
     margin: 1rem auto .7rem;
 }
 
-.h3{
+.h3 {
     margin: .5rem auto;
     font-size: 1.4rem;
 }
-.h4{
+
+.h4 {
     margin: 0 auto .5rem;
     font-size: 1.4rem;
 }
 
-.btn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.btn {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 20%;
 }
 
 .diver {
@@ -67,6 +68,7 @@
     height: 2rem;
     background-color: #809A6F;
     color: white;
+   font-size: 1.3rem;;
 }
 
 .delete {
@@ -76,6 +78,7 @@
     height: 2rem;
     background-color: #faebd7;
     color: brown;
+    font-size: 1.3rem;
 }
 
 .div {
@@ -87,16 +90,16 @@
     align-items: center;
 }
 
-.inputFlex{
+.inputFlex {
     display: flex;
     justify-content: space-evenly;
 }
 
-.p{
+.p {
     margin-right: 3rem;
 }
 
-.span{
+.span {
     color: green;
     text-decoration-line: line-through;
     text-decoration-style: double;
@@ -109,12 +112,13 @@
     margin: 0 auto 1rem;
     border-color: brown;
 }
+
 .input1:focus {
-    outline-color:  #809A6F;
-    border-color:  #809A6F;
+    outline-color: #809A6F;
+    border-color: #809A6F;
 }
 
-.btn3{
+.btn3 {
     background-color: brown;
     color: white;
     border: none;
@@ -122,9 +126,10 @@
     height: 2.5rem;
     width: 7rem;
     margin-right: 1rem;
+    font-size: 1.3rem;
 }
 
-.btn4{
+.btn4 {
     background-color: brown;
     color: white;
     border: none;
@@ -132,6 +137,7 @@
     height: 2.5rem;
     width: 7rem;
     margin-right: 1rem;
+    font-size: 1.3rem;
 }
 
 .input {
@@ -143,8 +149,8 @@
 }
 
 .input:focus {
-    outline-color:  #809A6F;
-    border-color:  #809A6F;
+    outline-color: #809A6F;
+    border-color: #809A6F;
 }
 
 @media screen and (max-width : 800px) {

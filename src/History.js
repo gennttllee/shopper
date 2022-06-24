@@ -30,7 +30,7 @@ export default function History() {
 
     const totalItems = history.reduce((a, c) => {
         return a + c.quantity
-      }, 0)
+    }, 0)
 
     return (
         <div className='history'>
@@ -44,12 +44,14 @@ export default function History() {
                         <p ><span className='span'>N</span>{data.bill}</p>
                     </div>) : <h3>No history saved</h3>}
                 </div>
-                <h4 className='h3'>Total items : {totalItems}</h4>
-                <h3 className='h4'>Total Bill : <span className='span'>N</span>{total}</h3>
-                <Link to='/'>
-                    <button className='btn3'>Go Back</button>
-                </Link>
-                <button className='btn4' onClick={format}>Format</button>
+                <div className='foot'>
+                    <h4 className='h3'>Total items : {totalItems}</h4>
+                    <h3 className='h4'>Total Bill : <span className='span'>N</span>{total}</h3>
+                    <Link to='/'>
+                        <button className='btn3'>Go Back</button>
+                    </Link>
+                    <button className='btn4' onClick={format}>Format</button>
+                </div>
             </div>
         </div>
     )
