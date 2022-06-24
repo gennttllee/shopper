@@ -1,5 +1,154 @@
-.coverme{
-    height: fit-content;
+.app {
+    width: 100%;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
 }
 
+.container {
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+.btn5{
+    width: 5rem;
+    height: 3rem;
+    background-color: brown;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.flex {
+    height: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.btnDiv {
+    width: 100%;
+    display: flex;
+    margin-bottom: -0.1rem;
+}
+
+.h1{
+    margin: 1rem auto .7rem;
+}
+
+.h3{
+    margin: .5rem auto;
+    font-size: 1.4rem;
+}
+.h4{
+    margin: 0 auto .5rem;
+    font-size: 1.4rem;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diver {
+    border: 2px solid brown;
+    padding: 0;
+    margin: 1rem auto;
+}
+
+.edit {
+    width: 15%;
+    border: none;
+    outline: none;
+    height: 2rem;
+    background-color: #809A6F;
+    color: white;
+}
+
+.delete {
+    width: 85%;
+    border: none;
+    outline: none;
+    height: 2rem;
+    background-color: #faebd7;
+    color: brown;
+}
+
+.div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.inputFlex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.p{
+    margin-right: 3rem;
+}
+
+.span{
+    color: green;
+    text-decoration-line: line-through;
+    text-decoration-style: double;
+}
+
+.input1 {
+    height: 2.5rem;
+    width: 40%;
+    padding-left: 1rem;
+    margin: 0 auto 1rem;
+    border-color: brown;
+}
+.input1:focus {
+    outline-color:  #809A6F;
+    border-color:  #809A6F;
+}
+
+.btn3{
+    background-color: brown;
+    color: white;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    width: 7rem;
+    margin-right: 1rem;
+}
+
+.btn4{
+    background-color: brown;
+    color: white;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    width: 7rem;
+    margin-right: 1rem;
+}
+
+.input {
+    height: 2.5rem;
+    width: 50%;
+    padding-left: 1rem;
+    margin: 0 auto .5rem;
+    border-color: brown;
+}
+
+.input:focus {
+    outline-color:  #809A6F;
+    border-color:  #809A6F;
+}
+
+@media screen and (max-width : 800px) {
+    .container {
+        width: 90%;
+    }
+}
