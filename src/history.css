@@ -11,8 +11,13 @@
     height: 100%;
 }
 
+.empty{
+    height: 10rem;
+}
+
 .foot{
     position: fixed;
+    background-color: white;
     bottom: 0;
     height: 20%;
     margin: 0 auto;
