@@ -45,12 +45,14 @@ export default function History() {
                     </div>) : <h3>No history saved</h3>}
                 </div>
                 <div className='foot'>
-                    <h4 className='h3'>Total items : {totalItems}</h4>
-                    <h3 className='h4'>Total Bill : <span className='span'>N</span>{total}</h3>
-                    <Link to='/'>
-                        <button className='btn3'> Back</button>
-                    </Link>
-                    <button className='btn4' onClick={format}>Format</button>
+                    <div className='container'>
+                        <h4 className='h3'>Total items : {totalItems}</h4>
+                        <h3 className='h4'>Total Bill : <span className='span'>N</span>{total}</h3>
+                        <Link to='/'>
+                            <button className='btn3'> Back</button>
+                        </Link>
+                        <button className='btn4' onClick={format}>Format</button>
+                    </div>
                 </div>
             </div>
         </div>
