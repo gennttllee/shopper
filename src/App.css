@@ -43,7 +43,7 @@
 
 .btn5 {
     width: 5rem;
-    height: 2.9rem;
+    height: 3rem;
     background-color: brown;
     color: white;
     border: none;
@@ -93,11 +93,13 @@
     position: relative;
     animation: mover;
     animation-duration: .4s;
+    -webkit-animation: mover;
+    -webkit-animation-duration: .4s;
 }
 
 @keyframes mover  {
-    from{transform: scale(0)};
-    to {transform: scale(1)};
+    from{transform: scale(0); -webkit-transform: scale(0)};
+    to {transform: scale(1); -webkit-transform: scale(1)};
 }
 
 .edit {
@@ -156,6 +158,7 @@
 .input1:focus {
     outline-color: #809A6F;
     border-color: #809A6F;
+    accent-color:  #809A6F ;
 }
 
 .btn3 {
@@ -196,6 +199,7 @@
 .input:focus {
     outline-color: #809A6F;
     border-color: #809A6F;
+    accent-color:  #809A6F ;
 }
 
 @media screen and (max-width : 800px) {
