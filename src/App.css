@@ -37,7 +37,7 @@
 
 .btn5 {
     width: 5rem;
-    height: 2.9rem;
+    height: 2.7rem;
     background-color: brown;
     color: white;
     border: none;
@@ -87,6 +87,7 @@
 }
 
 .edit {
+    text-align: center;
     width: 15%;
     border: none;
     outline: none;
@@ -165,7 +166,12 @@
     font-size: 1.3rem;
 }
 
+.floater{
+    width: 100%;
+}
+
 .input {
+    display: inline-block;
     height: 2.5rem;
     width: 50%;
     padding-left: 1rem;

@@ -126,8 +126,10 @@ const App = () => {
       <div className='first'>
         <div className='container'>
           <h1 className='h1'>MY SHOPPER APP</h1>
-          <input className='input' value={item} onKeyDown={pressed} onChange={add} type='text' placeholder='Enter Item here' required></input>
-          <button onClick={addItem} className='btn5'>Enter</button>
+          <div className='floater'>
+            <input className='input' value={item} onKeyDown={pressed} onChange={add} type='text' placeholder='Enter Item here' required></input>
+            <button onClick={addItem} className='btn5'>Enter</button>
+          </div>
         </div>
       </div>
       <div className='container1'>

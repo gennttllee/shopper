@@ -44,6 +44,7 @@ export default function History() {
                         <p ><span className='span'>N</span>{data.bill}</p>
                     </div>) : <h3>No history saved</h3>}
                 </div>
+                <div className='empty'></div>
                 <div className='foot'>
                     <div className='container'>
                         <h4 className='h3'>Total items : {totalItems}</h4>
