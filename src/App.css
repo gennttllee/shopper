@@ -5,13 +5,13 @@
     position: relative;
 }
 
-.right{
+.right {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.first{
+.first {
     position: fixed;
     display: block;
     width: 100%;
@@ -21,11 +21,11 @@
     z-index: 1;
 }
 
-.empty{
+.empty {
     height: 10rem;
 }
 
-.mark{
+.mark {
     width: 100%;
     height: 60%;
 }
@@ -34,7 +34,8 @@
     width: 50%;
     margin: 0 auto;
 }
-.container1{
+
+.container1 {
     width: 100%;
     margin: 0 auto;
     position: absolute;
@@ -97,9 +98,28 @@
     -webkit-animation-duration: .4s;
 }
 
-@keyframes mover  {
-    from{transform: scale(0)};
-    to {transform: scale(1)};
+@-webkit-keyframes mover {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes mover {
+    from {
+        transform: scale(0)
+    }
+
+    ;
+
+    to {
+        transform: scale(1)
+    }
+
+    ;
 }
 
 .edit {
@@ -110,7 +130,8 @@
     height: 2rem;
     background-color: #809A6F;
     color: white;
-   font-size: 1.3rem;;
+    font-size: 1.3rem;
+    ;
 }
 
 .delete {
@@ -158,7 +179,7 @@
 .input1:focus {
     outline-color: #809A6F;
     border-color: #809A6F;
-    accent-color:  #809A6F ;
+    accent-color: #809A6F;
 }
 
 .btn3 {
@@ -183,7 +204,7 @@
     font-size: 1.3rem;
 }
 
-.floater{
+.floater {
     width: 100%;
 }
 
@@ -199,7 +220,7 @@
 .input:focus {
     outline-color: #809A6F;
     border-color: #809A6F;
-    accent-color:  #809A6F ;
+    accent-color: #809A6F;
 }
 
 @media screen and (max-width : 800px) {
