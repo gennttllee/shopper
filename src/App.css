@@ -5,6 +5,12 @@
     position: relative;
 }
 
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .first{
     position: fixed;
     display: block;
@@ -37,7 +43,7 @@
 
 .btn5 {
     width: 5rem;
-    height: 2.8rem;
+    height: 2.9rem;
     background-color: brown;
     color: white;
     border: none;
@@ -172,10 +178,10 @@
 
 .input {
     display: inline-block;
+    font-size: 1.3rem;
     height: 2.5rem;
     width: 50%;
     padding-left: 1rem;
-    margin: 0 auto .5rem;
     border-color: brown;
 }
 
