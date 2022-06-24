@@ -90,6 +90,14 @@
     border: 2px solid brown;
     padding: 0;
     margin: 1rem auto;
+    position: relative;
+    animation: mover;
+    animation-duration: .4s;
+}
+
+@keyframes mover  {
+    from{transform: scale(0)};
+    to {transform: scale(1)};
 }
 
 .edit {
