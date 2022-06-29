@@ -117,7 +117,7 @@ const App = () => {
   }, 0)
 
   const clear = () => {
-    localStorage.clear('main');
+    localStorage.removeItem('main')
     setProducts([])
   }
 
