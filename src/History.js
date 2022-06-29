@@ -17,7 +17,7 @@ export default function History() {
 
     const format = () => {
         if (window.confirm('are you sure you want to format your history ?')) {
-            localStorage.clear('store')
+            localStorage.removeItem('store')
             window.alert("Done");
         } else {
             window.alert('cancelled')
