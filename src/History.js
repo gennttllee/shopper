@@ -25,11 +25,11 @@ export default function History() {
     }
 
     const total = history.reduce((a, c) => {
-        return a + c.bill
+        return a + parseInt(c.bill)
     }, 0)
 
     const totalItems = history.reduce((a, c) => {
-        return a + c.quantity
+        return a + parseInt(c.quantity)
     }, 0)
 
     return (

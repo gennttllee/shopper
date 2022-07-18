@@ -109,11 +109,11 @@ const App = () => {
   }
 
   const total = products.reduce((a, c) => {
-    return a + c.bill
+    return a + parseInt(c.bill)
   }, 0)
 
   const totalItems = products.reduce((a, c) => {
-    return a + c.quantity
+    return a + parseInt(c.quantity)
   }, 0)
 
   const clear = () => {
