@@ -21,9 +21,12 @@ const App = () => {
     }
   }, []);
 
+  const id = products.length > 0 ? products[products.length - 1].id : 0;
+
   const addItem = () => {
     if (item) {
       const temp = {
+        id: Number(id) + 1,
         itemName: item,
         quantity: 1,
         isVisible: false,
@@ -121,6 +124,10 @@ const App = () => {
     setProducts([])
   }
 
+  const mama = [...products]
+  mama.sort((a, b) => b.id - a.id);
+
+
   return (
     <div className='app'>
       <div className='first'>
@@ -136,7 +143,7 @@ const App = () => {
         <div className='mark'>
           <div className='container'>
             <div className='flex'>
-              {products.length > 0 ? products.map((product, index) => <div className='diver' key={index}>
+              {products.length > 0 ? mama.map((product, index) => <div className='diver' key={index}>
                 <div className='div'>
                   <p className='p' >{product.itemName}</p>
                   <p className='p'><span className='span'>N</span>{product.price}</p>
