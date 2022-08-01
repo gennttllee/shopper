@@ -32,15 +32,12 @@ export default function History() {
         return a + parseInt(c.quantity)
     }, 0)
 
-    const mama = [...history]
-    mama.sort((a, b) => b.id - a.id);
-
     return (
         <div className='history'>
             <div className='contain'>
                 <h1>History</h1>
                 <div className='float'>
-                    {history.length > 0 ? mama.map((data, index) => <div className='child' key={index}>
+                    {history.length > 0 ? history.map((data, index) => <div className='child' key={index}>
                         <hp className='p'>{data.itemName}</hp>
                         <p className='p'>  <span className='span'>N</span>{data.price}</p>
                         <p className='p'>{data.quantity}</p>

@@ -21,19 +21,22 @@ const App = () => {
     }
   }, []);
 
-  const id = products.length > 0 ? products[products.length - 1].id : 0;
+  const babe = [...products]
+  const id = products.length > 0 ? babe[0].id : 0
 
   const addItem = () => {
     if (item) {
       const temp = {
-        id: Number(id) + 1,
+        id: id + 1,
         itemName: item,
         quantity: 1,
         isVisible: false,
         price: 500,
         bill: 500,
       }
-      setProducts(products => [...products, temp]);
+      const newProduct = [...products];
+      newProduct.unshift(temp)
+      setProducts(newProduct);
       storage(temp);
     }
   }
@@ -43,20 +46,20 @@ const App = () => {
     const main = localStorage.getItem('main');
     if (store) {
       const myStore = JSON.parse(store);
-      myStore.push(temp);
+      myStore.unshift(temp);
       localStorage.setItem('store', JSON.stringify(myStore));
     } else {
       const myStore = [];
-      myStore.push(temp);
+      myStore.unshift(temp);
       localStorage.setItem('store', JSON.stringify(myStore));
     }
     if (main) {
       const myStore = JSON.parse(main);
-      myStore.push(temp);
+      myStore.unshift(temp);
       localStorage.setItem('main', JSON.stringify(myStore));
     } else {
       const myStore = [];
-      myStore.push(temp);
+      myStore.unshift(temp);
       localStorage.setItem('main', JSON.stringify(myStore));
     }
     setItem('')
@@ -72,10 +75,14 @@ const App = () => {
     }
   }
 
-  const edit = (index) => {
+  const edit = (product) => {
     setChange()
     let meme = [...products];
-    meme[index].isVisible = !meme[index].isVisible;
+    meme.forEach(item => {
+      if (item.id === product.id) {
+        item.isVisible = !item.isVisible
+      }
+    })
     setProducts(meme)
   }
 
@@ -124,10 +131,6 @@ const App = () => {
     setProducts([])
   }
 
-  const mama = [...products]
-  mama.sort((a, b) => b.id - a.id);
-
-
   return (
     <div className='app'>
       <div className='first'>
@@ -143,7 +146,7 @@ const App = () => {
         <div className='mark'>
           <div className='container'>
             <div className='flex'>
-              {products.length > 0 ? mama.map((product, index) => <div className='diver' key={index}>
+              {products.length > 0 ? products.map((product, index) => <div className='diver' key={index}>
                 <div className='div'>
                   <p className='p' >{product.itemName}</p>
                   <p className='p'><span className='span'>N</span>{product.price}</p>
@@ -151,11 +154,11 @@ const App = () => {
                   <p> <span className='span'>N</span>{product.bill}</p>
                 </div>
                 {product.isVisible ? <div className='inputFlex'>
-                  <input onFocus={() => setChange(index)} value={change === index && price} type='number' onChange={(e) => setPrice(e.target.value)} placeholder='edit price' className='input1'></input>
-                  <input onFocus={() => setChange(index)} value={change === index && quant} type='number' onChange={(e) => setQuant(e.target.value)} placeholder=' edit quantity' className='input1'></input>
+                  <input onFocus={() => setChange(product.id)} value={change === product.id && price} type='number' onChange={(e) => setPrice(e.target.value)} placeholder='edit price' className='input1'></input>
+                  <input onFocus={() => setChange(product.id)} value={change === product.id && quant} type='number' onChange={(e) => setQuant(e.target.value)} placeholder=' edit quantity' className='input1'></input>
                 </div> : null}
                 <div className='btnDiv'>
-                  <button onClick={() => edit(index)} className='edit'>edit</button>
+                  <button onClick={() => edit(product)} className='edit'>edit</button>
                   <button onClick={() => deleted(product, index)} className='delete'>{product.isVisible ? 'update' : 'delete'}</button>
                 </div>
               </div>) : <h4>No items yet , start adding items above</h4>}
